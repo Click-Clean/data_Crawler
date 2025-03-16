@@ -7,6 +7,7 @@ def lambda_handler (event, context) :
 
     headers = {"User-Agent" : "Chrome"}
 
+
     # naver news
     base = "https://media.naver.com/press/"
     sid = "?sid="
@@ -40,4 +41,6 @@ def lambda_handler (event, context) :
 
     # bbc news
     
-# lambda_handler(0, 0)
+
+if (__name__ == "__main__") :
+    lambda_handler (True, True)   
